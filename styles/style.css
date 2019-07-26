@@ -228,51 +228,155 @@ button {
     z-index: 0;
 }
 
+.pricebox {
+    background-color: #F7F7F7;
+    margin-top: 50px;
+}
+
+.pricebox h1 {
+    font-size: 20px;
+    text-transform: uppercase;
+
+}
+
+.pricebox__mainbox {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+}
 
 .pricebox__mainbox__item {
-    width: 300px;
+    width: 350px;
     height: 450px;
-    border: 3px solid black;
-    margin-left: 150px;
-    margin-top: 150px;
+    border: 3px solid #cccccc;
     position: relative;
     text-align: center;
 }
 
-.container .circle{
+.pricebox__mainbox__item .title {
+    margin-top: 35px;
+    font-size: 32px;
+
+}
+
+.pricebox__mainbox__item .circle{
     border-width: 15px;
-    width: 30px;
-    height: 30px;
+    width: 60px;
+    height: 60px;
     border-radius: 50%;
-    background-color: black;
+    background-color: lightgray;
     border-color: white;
     border-style: solid;
-    box-shadow: 0 0 0 6px black;
+    box-shadow: 0 0 0 2px #cccccc;
     position: absolute;
     left: 50%;
-    transform: translateX(-50%) translateY(-50%);
-
+    transform: translateX(-50%) translateY(-75%);
 }
 
-
-.title {
-    margin-top: 100px;
-    font-size: 32px;
-}
-
-.text {
-    font-size: 16px;
+.pricebox__mainbox__item div {
     margin-top: 20px;
-    margin-left: 10px;
-    margin-right: 10px;
 }
 
-.button {
-    padding: 15px;
-    background-color: black;
+.pricebox__mainbox__item div p {
+    font-size: 25px;
+    line-height: 40px;
+    color: darkgrey;
+    width: 100%;
+    height: 40px;
+    background-color: rgba(195, 195, 195, .4);
+}
+
+
+.round {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    border: 3px solid lightgray;
+    text-align: center;
+}
+
+
+/*.text {*/
+/*    font-size: 16px;*/
+/*    margin-top: 20px;*/
+/*    margin-left: 10px;*/
+/*    margin-right: 10px;*/
+/*}*/
+
+.button2 {
+    margin-top: 20px;
+    height: 40px;
+    line-height: 30px;
+    background-color: #00b38f;
     color: white;
-    margin-top: 20px;
+    width: auto;
+
 }
+
+
+
+
+
+footer {
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+}
+
+
+.footer {
+    display: flex;
+    justify-content: space-around;
+}
+
+.container1 {
+    width: 45%;
+}
+
+.container2 {
+    width: 45%;
+}
+
+.form {
+    width: 500px;
+}
+
+.form_label {
+    width: 100%;
+    height: 50px;
+    margin: 10px
+}
+
+.form textarea {
+    height: 150px;
+}
+
+.redchair {
+    background-image: url("../images/red_chair.png");
+    width: 300px;
+    height: 250px;
+    background-repeat: no-repeat;
+
+}
+
+.container2 {
+
+}
+
+
+.footer__down {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__down div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
 
 
 
