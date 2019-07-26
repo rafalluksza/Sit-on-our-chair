@@ -35,6 +35,11 @@ body {
     margin: 0 auto;
 }
 
+.insider {
+    width: 1100px;
+    margin: 0 auto;
+}
+
 header {
     background-color: #000000;
 }
@@ -231,23 +236,35 @@ button {
 .pricebox {
     background-color: #F7F7F7;
     margin-top: 50px;
+    padding: 50px 0 ;
+
 }
+
+/*pricebox gray start*/
 
 .pricebox h1 {
     font-size: 20px;
     text-transform: uppercase;
+    margin-left: 17px;
+}
 
+.line2 {
+    width: 300px;
+    height: 8px;
+    background-color: #00b38f;
+    display: block;
+    margin-left: 17px;
 }
 
 .pricebox__mainbox {
-    display: flex;
-    justify-content: space-around;
-    margin-top: 50px;
-}
+     display: flex;
+     justify-content: space-around;
+     margin-top: 50px;
+ }
 
 .pricebox__mainbox__item {
-    width: 350px;
-    height: 450px;
+    width: 330px;
+    height: 500px;
     border: 3px solid #cccccc;
     position: relative;
     text-align: center;
@@ -255,14 +272,14 @@ button {
 
 .pricebox__mainbox__item .title {
     margin-top: 35px;
-    font-size: 32px;
+    font-size: 22px;
 
 }
 
 .pricebox__mainbox__item .circle{
-    border-width: 15px;
-    width: 60px;
-    height: 60px;
+    border-width: 11px;
+    width: 50px;
+    height: 50px;
     border-radius: 50%;
     background-color: lightgray;
     border-color: white;
@@ -270,7 +287,7 @@ button {
     box-shadow: 0 0 0 2px #cccccc;
     position: absolute;
     left: 50%;
-    transform: translateX(-50%) translateY(-75%);
+    transform: translateX(-50%) translateY(-110%);
 }
 
 .pricebox__mainbox__item div {
@@ -279,43 +296,170 @@ button {
 
 .pricebox__mainbox__item div p {
     font-size: 25px;
+    font-weight: lighter;
     line-height: 40px;
     color: darkgrey;
     width: 100%;
     height: 40px;
-    background-color: rgba(195, 195, 195, .4);
+    background-color: rgba(200, 200, 200, 1);
 }
 
+.pricebox__mainbox__item div p:nth-child(2n) {
+    background-color: rgba(222, 222, 222, 1);
+}
 
 .round {
-    width: 100px;
-    height: 100px;
+    width: 125px;
+    height: 125px;
     border-radius: 50%;
     background-color: #ffffff;
     border: 3px solid lightgray;
     text-align: center;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
 }
 
 
-/*.text {*/
-/*    font-size: 16px;*/
-/*    margin-top: 20px;*/
-/*    margin-left: 10px;*/
-/*    margin-right: 10px;*/
-/*}*/
+.price {
+    font-size: 45px;
+    font-weight: bold;
+    line-height: 45px;
+    color: darkgrey;
+    position: absolute;
+}
+
+.pricerest {
+    position: absolute;
+    transform:  translateX(36px) translateY(-20px);
+    font-size: 16px;
+    color: darkgrey;
+}
+
+.pricemsc {
+    position: absolute;
+    transform: translateY(30px);
+    color: #00b38f;
+}
 
 .button2 {
-    margin-top: 20px;
+    bottom: 25px;
+    left: calc(50% - 60px);
+    position: absolute;
+    font-size: 18px;
     height: 40px;
     line-height: 30px;
     background-color: #00b38f;
     color: white;
-    width: auto;
+    width: 120px;
 
 }
 
 
+/*pricebox gray end*/
 
+/*pricebox green start*/
+
+.pricebox__mainbox__item2 {
+    width: 330px;
+    height: 500px;
+    border: 3px solid #00b38f;
+    position: relative;
+    text-align: center;
+    background-color: #00b38f;
+}
+
+.pricebox__mainbox__item2 .title2 {
+    margin-top: 35px;
+    font-size: 22px;
+    color: #ffffff;
+
+}
+
+.pricebox__mainbox__item2 .circle2{
+    width: 50px;
+    height: 50px;
+    border-width: 11px;
+    border-radius: 50%;
+    background-color: #fff;
+    border-color: #00b38f;
+    border-style: solid;
+    box-shadow: 0 0 0 2px #00b38f;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%) translateY(-110%);
+}
+
+.pricebox__mainbox__item2 div {
+    margin-top: 20px;
+}
+
+.pricebox__mainbox__item2 div p {
+    font-size: 25px;
+    font-weight: lighter;
+    line-height: 40px;
+    color: darkgrey;
+    width: 100%;
+    height: 40px;
+    background-color: rgba(222, 222, 222, 1);
+}
+
+.pricebox__mainbox__item2 div p:nth-child(2n) {
+    background-color: rgba(195, 195, 195, 1);
+}
+
+.round2 {
+    width: 125px;
+    height: 125px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    border: 3px solid #00b38f;
+    text-align: center;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+
+.price2 {
+    font-size: 45px;
+    font-weight: bold;
+    line-height: 45px;
+    color: #00b38f;
+    position: absolute;
+}
+
+.pricerest2 {
+    position: absolute;
+    transform:  translateX(36px) translateY(-20px);
+    font-size: 16px;
+    color: #00b38f;
+}
+
+.pricemsc2 {
+    position: absolute;
+    transform: translateY(30px);
+    color: #00b38f;
+}
+
+.button22 {
+    bottom: 25px;
+    left: calc(50% - 60px);
+    position: absolute;
+    font-size: 18px;
+    height: 40px;
+    line-height: 30px;
+    background-color: #fff;
+    color: #00b38f;
+    width: 120px;
+
+}
+
+/*pricebo green end*/
 
 
 footer {
@@ -331,25 +475,33 @@ footer {
 }
 
 footer h1 {
+    font-size: 20px;
     text-transform: uppercase;
+    margin-left: 17px;
 }
 
 .container1 {
-    width: 45%;
+    width: 60%;
 }
 
 .container2 {
-    width: 45%;
+    width: 35%;
 }
 
 .form {
-    width: 500px;
+    margin-left: 17px;
+    padding-top: 40px;
+    width: 650px;
 }
 
 .form_label {
     width: 100%;
-    height: 50px;
-    margin: 10px
+    height: 65px;
+    margin: 10px 0;
+    font-size: 35px;
+    font-weight: lighter;
+    padding-left: 20px;
+    border: 1px solid #00b38f;
 }
 
 .form textarea {
@@ -364,7 +516,8 @@ footer h1 {
 
 }
 
-.container2 {
+
+.container2 form {
 
 }
 
@@ -381,6 +534,30 @@ footer h1 {
 }
 
 
+/*checkbox styles*/
 
+.container3 {
+    font-size: 20px;
+    display: block;
+    cursor: pointer;
+
+}
+
+.checkbox {
+
+}
+
+/*button send styles*/
+
+.buttondown {
+    margin-top: 60px;
+    width: 340px;
+    height: 70px;
+    background-color: #00b38f;
+    color: #ffffff;
+    font-size: 35px;
+    border-radius: 10px;
+    text-transform: uppercase;
+}
 
 
