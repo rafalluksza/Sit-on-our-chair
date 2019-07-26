@@ -27,4 +27,43 @@ html {
 
 }
 
+.center {
+    width: 1200px;
+    margin: 0 auto;
+}
 
+header {
+    background-color: #000000;
+}
+
+.menu {
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: uppercase;
+    font-size: 15px;
+}
+
+.logo {
+    color: #ffffff;
+    font-weight: lighter;
+    padding-left: 70px;
+}
+
+.logo span {
+    color: aquamarine;
+}
+
+.nav {
+    color: white;
+}
+
+.nav__list {
+    display: flex;
+
+}
+
+.nav__list__item {
+    padding-right: 55px;
+}
