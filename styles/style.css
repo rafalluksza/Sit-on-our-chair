@@ -2,18 +2,18 @@
 html {
 
     @font-face {
-        font-family: 'ralewaybold';
+        font-family: 'ralewayregular';
         src: url('../fonts/raleway-bold-webfont.woff2') format('woff2'),
         url('../fonts/raleway-bold-webfont.woff') format('woff');
-        font-weight: normal;
+        font-weight: bold;
         font-style: normal;
     }
 
     @font-face {
-        font-family: 'ralewaylight';
+        font-family: 'ralewayregular';
         src: url('../fonts/raleway-light-webfont.woff2') format('woff2'),
         url('../fonts/raleway-light-webfont.woff') format('woff');
-        font-weight: normal;
+        font-weight: light;
         font-style: normal;
     }
 
@@ -69,12 +69,63 @@ span {
 
 .nav__list {
     display: flex;
-
+    position: relative;
 }
 
 .nav__list__item {
-    padding-right: 55px;
+    margin-right: 55px;
+    padding: 10px 0;
 }
+
+.nav__list__item:hover {
+    background-color: rgba(255, 255, 255, .4);
+}
+
+.nav__list__item:hover > ul {
+    display: block;
+}
+
+.listdown {
+    display: none;
+    position: absolute;
+    background-color: #000;
+    color: #fff;
+    width: 135px;
+    height: auto;
+    border-top: 15px solid #fff;
+    margin-top: 11px;
+    left: -28px;
+    text-align: left;
+}
+
+.listdown:after {
+    content: '';
+    width: 0;
+    height: 0;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-bottom: 15px solid black;
+    position: absolute;
+    transform: translateX(51px) translateY(-113px);
+}
+
+.listdown li:hover {
+    background-color: rgba(255, 255, 255, .4);
+}
+
+.listdown__item {
+    font-size: 15px;
+    padding: 8px 15px;
+}
+
+/*.listdown:hover {*/
+/*    background-color: rgba(255, 255, 255, .4);*/
+/*}*/
+
+/*header styles end*/
+
+
+/*section styles start*/
 
 .section1 {
     height: 450px;
@@ -165,9 +216,12 @@ button {
 
 }
 
-.boxfield {
+/*section styles end*/
 
-}
+
+/*boxfield styles start*/
+
+
 
 .boxfield {
     display: flex;
@@ -240,6 +294,9 @@ button {
 
 }
 
+/*boxfield styles end*/
+
+
 /*pricebox gray start*/
 
 .pricebox h1 {
@@ -248,12 +305,19 @@ button {
     margin-left: 17px;
 }
 
-.line2 {
+.line3 {
     width: 300px;
     height: 8px;
     background-color: #00b38f;
     display: block;
     margin-left: 17px;
+}
+
+.line2 {
+    width: 300px;
+    height: 8px;
+    background-color: #00b38f;
+    display: block;
 }
 
 .pricebox__mainbox {
@@ -461,13 +525,14 @@ button {
 
 /*pricebo green end*/
 
+/*footer styles start*/
 
 footer {
     display: flex;
     flex-direction: column;
-    margin-top: 40px;
-}
+    margin: 40px 0;
 
+}
 
 .footer {
     display: flex;
@@ -477,7 +542,6 @@ footer {
 footer h1 {
     font-size: 20px;
     text-transform: uppercase;
-    margin-left: 17px;
 }
 
 .container1 {
@@ -489,7 +553,6 @@ footer h1 {
 }
 
 .form {
-    margin-left: 17px;
     padding-top: 40px;
     width: 650px;
 }
@@ -505,7 +568,7 @@ footer h1 {
 }
 
 .form textarea {
-    height: 150px;
+    height: 200px;
 }
 
 .redchair {
@@ -513,44 +576,94 @@ footer h1 {
     width: 300px;
     height: 250px;
     background-repeat: no-repeat;
+    margin-top: 55px;
 
 }
-
-
-.container2 form {
-
-}
-
 
 .footer__down {
     display: flex;
     justify-content: space-between;
+    margin-top: 50px;
+    align-items: center;
 }
 
 .footer__down div {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    width: 36%;
 }
 
+.footer__down div p {
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: lighter;
+
+}
+
+.bolder {
+    font-weight: bolder;
+    color: black;
+}
+
+/*footer styles end*/
 
 /*checkbox styles*/
 
-.container3 {
-    font-size: 20px;
+.control input {
+    display: none;
+}
+
+.control input:checked ~ .control_indicator {
+    background: #ffffff;
+}
+
+.control_indicator {
+    position: absolute;
+    top: 2px;
+    left: 0;
+    height: 45px;
+    width: 45px;
+    background: #ffffff;
+    border: 1px solid #00b38f;
+}
+
+.control {
     display: block;
+    position: relative;
+    padding-left: 55px;
+    margin-bottom: 5px;
     cursor: pointer;
-
+    font-size: 20px;
 }
 
-.checkbox {
-
+.control input:checked ~ .control_indicator:after {
+    display: block;
 }
+
+.control-checkbox .control_indicator:after {
+    left: 14px;
+    top: 2px;
+    width: 14px;
+    height: 30px;
+    border: solid #00b38f;
+    border-width: 0 5px 5px 0;
+    transform: rotate(45deg);
+}
+
+.control_indicator:after {
+    box-sizing: unset;
+    content: '';
+    position: absolute;
+    display: none;
+}
+
+/*checkbox styles end*/
 
 /*button send styles*/
 
 .buttondown {
-    margin-top: 60px;
+    margin-top: 25px;
     width: 340px;
     height: 70px;
     background-color: #00b38f;
