@@ -1,0 +1,83 @@
+header {
+  background-color: #000000;
+}
+
+.menu {
+  height: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-transform: uppercase;
+  font-size: 15px;
+}
+
+.logo {
+  color: #ffffff;
+  font-weight: lighter;
+  padding-left: 70px;
+}
+
+span {
+  color: #00b38f;
+}
+
+.nav {
+  color: white;
+}
+
+.nav__list {
+  display: flex;
+  position: relative;
+}
+
+.nav__list__item {
+  margin-right: 25px;
+  padding: 10px 15px;
+}
+
+.nav__list__item:hover {
+  background-color: rgba(255, 255, 255, .4);
+}
+
+.nav__list__item:hover > ul {
+  display: block;
+}
+
+.listdown {
+  display: none;
+  position: absolute;
+  background-color: #000;
+  color: #fff;
+  width: 135px;
+  height: auto;
+  border-top: 15px solid #fff;
+  margin-top: 11px;
+  left: -28px;
+  text-align: left;
+}
+
+.listdown:after {
+  content: '';
+  width: 0;
+  height: 0;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-bottom: 15px solid black;
+  position: absolute;
+  transform: translateX(51px) translateY(-113px);
+}
+
+.listdown li:hover {
+  background-color: rgba(255, 255, 255, .4);
+}
+
+.listdown__item {
+  font-size: 15px;
+  padding: 8px 15px;
+}
+
+/*.listdown:hover {*/
+/*    background-color: rgba(255, 255, 255, .4);*/
+/*}*/
+
+/*header styles end*/
